@@ -1,0 +1,45 @@
+@import "../styles/variables.css";
+
+@import "../styles/base.css";
+
+@import "../styles/header.css";
+@import "../styles/footer.css";
+
+@import "../styles/pages/home.css";
+@import "../styles/pages/about.css";
+@import "../styles/pages/services.css";
+@import "../styles/pages/contact.css";
+@import "../styles/pages/chatbot.css";
+
+@import "../styles/responsive.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}

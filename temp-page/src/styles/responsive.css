@@ -1,0 +1,500 @@
+/* Laptop (≤1024px) */
+@media (max-width: 1024px) {
+  /* About Us responsive styles */
+  .about-content {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .about-text {
+    padding: var(--spacing-md);
+  }
+
+  .about-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .about-description {
+    font-size: var(--font-size-base);
+  }
+
+  .about-img {
+    max-width: 100%;
+  }
+
+  /* Contact responsive styles */
+  .contact-content {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+  }
+
+  .contact-info {
+    flex: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form-container {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+/* Mobile and Tablets (≤768px) */
+@media (max-width: 768px) {
+  /* Header responsive */
+  .header {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .logo-text {
+    font-size: var(--font-size-2xl);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav.nav-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-sm);
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+
+  .nav.nav-open .nav-list {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+  }
+
+  .nav.nav-open .nav-link {
+    display: block;
+    padding: var(--spacing-md);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav.nav-open .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  /* ChatBot responsive styles */
+  .chatbot-container {
+    padding: 0;
+  }
+
+  .chatbot-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .chatbot-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .chat-container {
+    padding: var(--spacing-md);
+  }
+
+  .chatting {
+    padding: var(--spacing-md);
+    max-height: 50vh;
+    min-height: 300px;
+  }
+
+  .message-content {
+    max-width: 85%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-sm);
+  }
+
+  .chat {
+    flex-wrap: wrap;
+  }
+
+  .chat input {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-sm);
+  }
+
+  .chat .chat-btn {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-sm);
+  }
+
+  /* About Us responsive styles */
+  .about-container {
+    padding: var(--spacing-lg);
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+
+  .about-text {
+    padding: var(--spacing-lg);
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .about-description {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .about-features {
+    margin-top: var(--spacing-xl);
+  }
+
+  .feature-item {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .feature-item h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .feature-item p {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+  }
+
+  .about-img {
+    max-width: 100%;
+    border-radius: var(--radius-md);
+  }
+
+  /* Contact Us responsive styles */
+  .contact-container {
+    padding: var(--spacing-lg);
+  }
+
+  .contact-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .contact-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contact-subtitle {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-normal);
+    max-width: 100%;
+  }
+
+  .contact-info {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+  }
+
+  .contact-form-container {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+  }
+
+  .info-section {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .info-section h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .info-item {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--radius-md);
+  }
+
+  .info-icon {
+    font-size: var(--font-size-2xl);
+    margin-left: var(--spacing-lg);
+    width: 45px;
+  }
+
+  .info-details h4 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .info-details p {
+    font-size: var(--font-size-base);
+  }
+
+  .working-hours p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+  }
+
+  .form-group {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .form-group label {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+    border-radius: var(--radius-md);
+  }
+
+  .form-group textarea {
+    min-height: 130px;
+  }
+
+  .submit-btn {
+    padding: var(--spacing-lg) var(--spacing-xl);
+    font-size: var(--font-size-lg);
+    border-radius: var(--radius-md);
+  }
+
+  .success-message,
+  .error-message {
+    padding: var(--spacing-lg);
+    font-size: var(--font-size-base);
+    border-radius: var(--radius-md);
+  }
+
+  /* Services responsive styles */
+  .services-container {
+    padding: var(--spacing-lg);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .services-title {
+    font-size: var(--font-size-3xl);
+  }
+
+  .services-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .service-card {
+    padding: var(--spacing-xl);
+  }
+
+  .service-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .service-description {
+    font-size: var(--font-size-base);
+  }
+
+  .services-cta {
+    padding: var(--spacing-xl) var(--spacing-xl);
+  }
+
+  .services-cta h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .services-cta p {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Footer responsive styles */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section h4 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .footer-section p {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+  }
+
+  .footer-section ul li {
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs) 0;
+  }
+
+  .footer-section ul li a {
+    font-size: var(--font-size-sm);
+  }
+
+  .footer-bottom {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+
+  .footer-bottom p {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Small phones (≤480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: var(--spacing-md);
+  }
+
+  .logo-text {
+    font-size: var(--font-size-xl);
+  }
+
+  .welcome p {
+    font-size: var(--font-size-sm);
+  }
+
+  /* About Us small phone adjustments */
+  .about-container {
+    padding: var(--spacing-md);
+  }
+
+  .about-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .about-description {
+    font-size: var(--font-size-sm);
+  }
+
+  .feature-item {
+    padding: var(--spacing-md);
+  }
+
+  .feature-item h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Contact Us small phone adjustments */
+  .contact-container {
+    padding: var(--spacing-md);
+  }
+
+  .contact-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .contact-subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .contact-info,
+  .contact-form-container {
+    padding: var(--spacing-md);
+  }
+
+  .info-item {
+    padding: var(--spacing-md);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+
+  .submit-btn {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-base);
+  }
+
+  /* Services small phone adjustments */
+  .services-container {
+    padding: var(--spacing-md);
+  }
+
+  .services-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .services-subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .service-card {
+    padding: var(--spacing-md);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+  }
+
+  .service-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .services-cta {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .services-cta h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .services-cta p {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Small laptops (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Desktops (1025px–1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Ultra wide (1441px+) */
+@media (min-width: 1441px) {
+  .chatting {
+    max-width: 1000px;
+  }
+}
