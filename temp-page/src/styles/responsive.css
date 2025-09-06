@@ -120,6 +120,7 @@
 
   .chat {
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .chat input {

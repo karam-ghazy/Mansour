@@ -6,10 +6,9 @@ import ChatMessage from "./ChatMessage";
 function ChatBot() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
-  const chatContainerRef = useRef(null); // Reference to the chat container
-  const isInitialRender = useRef(true); // Track initial render
+  const chatContainerRef = useRef(null);
+  const isInitialRender = useRef(true);
 
-  // Scroll to the bottom of the chat when messages change, but not on initial render
   useEffect(() => {
     if (isInitialRender.current) {
       isInitialRender.current = false;

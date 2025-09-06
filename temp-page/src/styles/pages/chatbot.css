@@ -66,6 +66,7 @@
   position: sticky;
   bottom: 0;
   background: white;
+  padding: var(--spacing-md) 0;
 }
 
 .chat input {
