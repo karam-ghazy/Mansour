@@ -38,6 +38,7 @@
   box-shadow: var(--shadow-md);
   padding: var(--spacing-xl);
   margin: 0 auto;
+  position: relative;
 }
 
 .chatting {
@@ -54,6 +55,7 @@
   gap: var(--spacing-md);
   max-height: 60vh;
   min-height: 400px;
+  scroll-behavior: smooth;
 }
 
 .chat {
@@ -61,6 +63,9 @@
   display: flex;
   gap: var(--spacing-sm);
   align-items: center;
+  position: sticky;
+  bottom: 0;
+  background: white;
 }
 
 .chat input {
